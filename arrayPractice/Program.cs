@@ -73,6 +73,9 @@ namespace arrayPractice
 
             string[] names = { "Jane", "Joey", "Mika", "Bradley", "Paul" };
             Console.WriteLine(Array.IndexOf(names, "Bradley"));
+            Console.WriteLine(names[1]);
+            Array.Sort(names);
+            Console.WriteLine(names[0]);
 
 
             //Create an array of Lucky numbers, each number should repeat at least once. Choose a lucky number, find and print the last of it
@@ -87,7 +90,11 @@ namespace arrayPractice
             Array.Reverse(alphabetLetters);
             Console.WriteLine(alphabetLetters[0]);
 
+            //Ask 10 people for their favorite numbers and create an array of those numbers. Order the numbers using the sort method. Print the first and last numbers.
 
+            int[] favNumbers = { 15, 7, 22, 5, 43, 23, 3, 42, 17 };
+            Array.Sort(favNumbers);
+            Console.WriteLine(favNumbers[0] + " " + favNumbers[favNumbers.Length - 1]);
 
 
 
